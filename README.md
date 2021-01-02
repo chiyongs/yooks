@@ -8,3 +8,4 @@ React-hooks made by me!
 - [🟡] useClick
 - [🟡] useHover
 - [🟡] useConfirm
+- [🟡] usePreventLeave
