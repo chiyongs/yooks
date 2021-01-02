@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const useTitle = (initialTitle) => {
+export const useTitle = (initialTitle) => {
   const [title, setTitle] = useState(initialTitle);
   const updateTitle = () => {
     const htmlTitle = document.querySelector("title");
@@ -9,10 +9,3 @@ const useTitle = (initialTitle) => {
   useEffect(updateTitle, [title]);
   return setTitle;
 };
-
-export default function App() {
-  const titleUpdater = useTitle("Loading...");
-  setTimeout(() => titleUpdater("Home"));
-
-  return <div>Hi</div>;
-}

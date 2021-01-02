@@ -12,7 +12,7 @@ const content = [
   },
 ];
 
-const useTabs = (initialTab, allTabs) => {
+export const useTabs = (initialTab, allTabs) => {
   if (!allTabs || !Array.isArray(allTabs)) {
     return;
   }
@@ -22,17 +22,3 @@ const useTabs = (initialTab, allTabs) => {
     changeItem: setCurrentIndex,
   };
 };
-
-export default function App() {
-  const { currentItem, changeItem } = useTabs(0, content);
-  return (
-    <div className="App">
-      {content.map((section, index) => (
-        <button key={index} onClick={() => changeItem(index)}>
-          {section.tabs}
-        </button>
-      ))}
-      <div>{currentItem.content}</div>
-    </div>
-  );
-}
