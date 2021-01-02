@@ -7,3 +7,4 @@ React-hooks made by me!
 - [🟡] useTabs
 - [🟡] useClick
 - [🟡] useHover
+- [🟡] useConfirm
