@@ -9,3 +9,5 @@ React-hooks made by me!
 - [🟡] useHover
 - [🟡] useConfirm
 - [🟡] usePreventLeave
+- [🟡] useBeforeLeave
+- [🟡] useFadeIn
